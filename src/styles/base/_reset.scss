@@ -1,0 +1,52 @@
+// Additional Customizing reset CSS
+* {
+  margin: 0;
+  font-family: $contents-font-family;
+  box-sizing: border-box;
+  //   -webkit-font-smoothing: antialiased;
+  //   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: $contents-font-family;
+  // 보통 16px이 기본 브라우저 폰트 사이즈로 사용됨
+  font-size: $contents-font-family;
+}
+
+body {
+  font-family: $contents-font-family;
+  color: $white-color;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
