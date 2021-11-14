@@ -1,0 +1,60 @@
+@mixin text-style-logo() {
+  font-size: $logo-font-size;
+  line-height: $logo-line-height;
+  letter-spacing: $logo-letter-spacing;
+}
+
+@mixin text-style-18() {
+  font-size: $xs-font-size;
+  line-height: $xs-line-height;
+  letter-spacing: $xs-letter-spacing;
+}
+
+@mixin text-style-24() {
+  font-size: $md-font-size;
+  line-height: $md-line-height;
+  letter-spacing: $md-letter-spacing;
+}
+
+@mixin text-style-64() {
+  font-size: $lg-font-size;
+  line-height: $lg-line-height;
+  letter-spacing: $lg-letter-spacing;
+}
+
+@mixin text-style-88() {
+  font-size: $xl-font-size;
+  line-height: $xl-line-height;
+  letter-spacing: $xl-letter-spacing;
+}
+
+@mixin text-style-240() {
+  font-size: $xxl-font-size;
+  line-height: $xxl-line-height;
+  letter-spacing: $xxl-letter-spacing;
+}
+
+@mixin text-style($size, $color: false) {
+  @if ($size == logo) {
+    @include text-style-logo();
+  }
+  @if ($size == 18) {
+    @include text-style-18();
+  }
+  @if ($size == 24) {
+    @include text-style-24();
+  }
+  @if ($size == 64) {
+    @include text-style-64();
+  }
+  @if ($size == 88) {
+    @include text-style-88();
+  }
+  @if ($size == 240) {
+    @include text-style-240();
+  }
+
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
