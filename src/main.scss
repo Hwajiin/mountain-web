@@ -4,6 +4,7 @@
 
 @import "./styles/base/normalize";
 @import "./styles/base/reset";
+@import "./styles/base/globals";
 
 @import "./styles/mixins/responsive";
 @import "./styles/mixins/flexbox";
@@ -11,3 +12,4 @@
 @import "./styles/mixins/text-style";
 
 @import "./styles/layouts/grids";
+@import "./styles/layouts/gnb";

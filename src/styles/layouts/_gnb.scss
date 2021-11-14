@@ -1,0 +1,46 @@
+.gnb {
+  &-wrapper {
+    @include flexbox(between);
+    height: 50px;
+    position: relative;
+  }
+
+  &-left {
+    .logo {
+      a {
+        font-family: $logo-font-family;
+        @include text-style(logo);
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  &-right {
+    .gnb-menu-icon {
+      @include text-style(24);
+    }
+  }
+
+  @include responsive(D) {
+    &-nav {
+      @include flexbox();
+    }
+
+    &-nav-list {
+      @include flexbox();
+      @include pos-center();
+    }
+
+    &-nav-item {
+      margin: 0 20px;
+    }
+
+    .user-account-button {
+      @include flexbox();
+      i {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
