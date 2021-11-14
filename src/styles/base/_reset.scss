@@ -3,8 +3,8 @@
   margin: 0;
   font-family: $contents-font-family;
   box-sizing: border-box;
-  //   -webkit-font-smoothing: antialiased;
-  //   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -16,6 +16,7 @@ html {
 body {
   font-family: $contents-font-family;
   color: $white-color;
+  background-color: $background-color;
 }
 
 h1 {
@@ -47,6 +48,7 @@ button {
 
 button {
   padding: 0;
+  color: $white-color;
 }
 
 ul,
