@@ -4,7 +4,13 @@
   letter-spacing: $logo-letter-spacing;
 }
 
-@mixin text-style-18() {
+@mixin text-style-13() {
+  font-size: $xxs-font-size;
+  line-height: $xxs-line-height;
+  letter-spacing: $xxs-letter-spacing;
+}
+
+@mixin text-style-16() {
   font-size: $xs-font-size;
   line-height: $xs-line-height;
   letter-spacing: $xs-letter-spacing;
@@ -38,8 +44,11 @@
   @if ($size == logo) {
     @include text-style-logo();
   }
-  @if ($size == 18) {
-    @include text-style-18();
+  @if ($size == 13) {
+    @include text-style-13();
+  }
+  @if ($size == 16) {
+    @include text-style-16();
   }
   @if ($size == 24) {
     @include text-style-24();
