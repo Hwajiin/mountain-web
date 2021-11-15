@@ -1,0 +1,54 @@
+.footer {
+  $footer-margin-size: 25px;
+
+  &-left {
+    @include column-flexbox(between, start);
+    height: 100%;
+
+    .story-short {
+      .logo {
+        font-family: $logo-font-family;
+        @include text-style(logo);
+        letter-spacing: 0.05em;
+        margin-bottom: $footer-margin-size;
+      }
+
+      p {
+        @include text-style(13);
+      }
+      margin-bottom: $footer-margin-size;
+    }
+
+    .copyright {
+      font-size: 9px;
+      opacity: 0.6;
+    }
+    padding-bottom: $footer-margin-size;
+  }
+
+  .more-blog-list,
+  .more-mntn-list {
+    h2 {
+      @include text-style(16);
+      color: $point-color;
+      margin-bottom: $footer-margin-size;
+    }
+  }
+
+  .more-blog-item,
+  .more-mntn-item {
+    @include text-style(13);
+    margin-bottom: 10px;
+  }
+
+  .more-blog-item:last-child,
+  .more-mntn-item:last-child {
+    margin-bottom: 0;
+  }
+
+  @include responsive(D) {
+    &-left {
+      padding-bottom: 0;
+    }
+  }
+}
