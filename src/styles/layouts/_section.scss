@@ -1,0 +1,22 @@
+section {
+  @include flexbox();
+  width: 100%;
+  height: 100vh;
+
+  .img-wrapper {
+    width: 100%;
+    min-height: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@include responsive(D) {
+  section:not(:first-child) {
+    padding: 0 $gutter + $lg-unit;
+  }
+}
