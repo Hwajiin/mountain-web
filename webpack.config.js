@@ -18,7 +18,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/i,
         use: [
-          process.env.NODE_ENV === "development"
+          process.env.NODE_ENV === "production"
             ? MiniCssExtractPlugin.loader
             : "style-loader",
           "css-loader",
@@ -34,8 +34,8 @@ module.exports = {
         test: /\.(png|jpg|svg|gif)$/i,
         loader: "url-loader",
         options: {
-          limit: 20000,
-          name: "[name].[ext]?[hash]",
+          limit: 4000,
+          name: "images/[name].[ext]",
         },
       },
     ],
@@ -46,6 +46,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      hash: true,
     }),
     new CleanWebpackPlugin(),
     ...(process.env.NODE_ENV === "production"
@@ -53,7 +54,11 @@ module.exports = {
       : []),
   ],
   devServer: {
+    open: true,
     hot: true,
+    static: {
+      publicPath: "/",
+    },
   },
   devtool: "source-map",
 };
