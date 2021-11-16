@@ -1,3 +1,4 @@
+@use "sass:math";
 /*
 * MOBILE (x < 768px)
 * fixture ....................... sm
@@ -44,7 +45,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
 
   @for $i from 1 through $sm-columns {
     .col-sm-#{$i} {
-      width: percentage($i / $sm-columns);
+      width: percentage(math.div($i, $sm-columns));
     }
   }
 
