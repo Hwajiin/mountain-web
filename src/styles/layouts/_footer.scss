@@ -1,5 +1,7 @@
 .footer {
   $footer-margin-size: 25px;
+  margin-top: $footer-margin-size * 4;
+  padding-bottom: $footer-margin-size;
 
   &-left {
     @include column-flexbox(between, start);
