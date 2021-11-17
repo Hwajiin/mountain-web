@@ -53,8 +53,15 @@ section {
       top: $content-margin-size;
       right: 0;
       display: inline;
-      font-size: 88px;
-      opacity: 0.3;
+      font-size: 64px;
+      opacity: 0;
+    }
+
+    @include responsive(D) {
+      &::before {
+        font-size: 88px;
+        opacity: 0.3;
+      }
     }
   }
 }
