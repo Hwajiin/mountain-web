@@ -1,0 +1,60 @@
+section {
+  $content-margin-size: 25px;
+
+  .content-box {
+    @include text-style(13);
+    position: relative;
+
+    .title-wrapper {
+      @include flexbox();
+    }
+
+    .title-line {
+      display: block;
+      width: 30px;
+      height: 1px;
+      margin-right: 10px;
+      background-color: $point-color;
+    }
+
+    .title {
+      text-transform: uppercase;
+      color: $point-color;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+    }
+
+    .subtitle {
+      margin: $content-margin-size 0;
+      @include text-style(24);
+      font-family: $logo-font-family;
+    }
+
+    .description {
+      text-align: justify;
+    }
+
+    .read-more-btn,
+    .scroll-btn {
+      i {
+        margin-left: 10px;
+        font-size: 11px;
+      }
+    }
+
+    .read-more-btn {
+      margin-top: $content-margin-size;
+      color: $point-color;
+    }
+
+    &::before {
+      position: absolute;
+      content: attr(data-number);
+      top: $content-margin-size;
+      right: 0;
+      display: inline;
+      font-size: 88px;
+      opacity: 0.3;
+    }
+  }
+}
