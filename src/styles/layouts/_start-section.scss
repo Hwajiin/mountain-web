@@ -1,0 +1,19 @@
+#start {
+  .col-sm-4 {
+    position: relative;
+    top: -130px;
+
+    .content-box {
+      @include pos-center();
+    }
+  }
+
+  @include responsive(D) {
+    .content-box {
+      .subtitle {
+        font-size: 34px;
+        line-height: 50px;
+      }
+    }
+  }
+}
