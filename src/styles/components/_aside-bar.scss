@@ -4,6 +4,7 @@
   @include flexbox(between, start);
   @include text-style(13);
   width: 100%;
+  opacity: 0;
 
   &-left {
     writing-mode: vertical-rl;
@@ -24,5 +25,9 @@
       width: 100%;
       margin-top: $aside-bar-margin-size;
     }
+  }
+
+  @include responsive(D) {
+    opacity: 1;
   }
 }
