@@ -11,6 +11,7 @@ html {
   font-family: $contents-font-family;
   // 보통 16px이 기본 브라우저 폰트 사이즈로 사용됨
   font-size: $contents-font-family;
+  overflow-x: hidden;
 }
 
 body {
