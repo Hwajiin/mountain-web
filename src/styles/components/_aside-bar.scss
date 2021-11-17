@@ -1,0 +1,28 @@
+.aside-bar {
+  $aside-bar-margin-size: 10px;
+
+  @include flexbox(between, start);
+  @include text-style(13);
+  width: 100%;
+
+  &-left {
+    writing-mode: vertical-rl;
+
+    a {
+      margin-top: $aside-bar-margin-size;
+    }
+  }
+
+  &-right {
+    @include column-flexbox(center);
+
+    button {
+      @include flexbox(end);
+    }
+
+    button:not(:first-child) {
+      width: 100%;
+      margin-top: $aside-bar-margin-size;
+    }
+  }
+}
