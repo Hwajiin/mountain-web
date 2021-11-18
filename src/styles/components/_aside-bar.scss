@@ -11,6 +11,11 @@
 
     a {
       margin-top: $aside-bar-margin-size;
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
     }
   }
 
@@ -19,6 +24,11 @@
 
     button {
       @include flexbox(end);
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
     }
 
     button:not(:first-child) {

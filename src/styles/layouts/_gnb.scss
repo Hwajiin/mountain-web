@@ -24,6 +24,11 @@
   &-right {
     .gnb-menu-icon {
       @include text-style(24);
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
     }
   }
 
@@ -39,10 +44,21 @@
 
     &-nav-item {
       margin: 0 20px;
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
     }
 
     .user-account-button {
       @include flexbox();
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
+
       i {
         margin-right: 10px;
         font-size: 20px;

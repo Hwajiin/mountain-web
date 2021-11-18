@@ -36,6 +36,12 @@ section {
 
     .read-more-btn,
     .scroll-btn {
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: $hover-opacity;
+      }
+
       i {
         margin-left: 10px;
         font-size: 11px;
