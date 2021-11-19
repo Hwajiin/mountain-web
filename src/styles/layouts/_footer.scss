@@ -41,6 +41,11 @@
   .more-mntn-item {
     @include text-style(13);
     margin-bottom: 10px;
+    transition: opacity 200ms ease-in-out;
+
+    &:hover {
+      opacity: $hover-opacity;
+    }
   }
 
   .more-blog-item:last-child,
