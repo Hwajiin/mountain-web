@@ -37,7 +37,7 @@
     }
   }
 
-  @include responsive(D) {
+  @include responsive(T) {
     opacity: 1;
   }
 }

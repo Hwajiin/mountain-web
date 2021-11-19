@@ -63,10 +63,16 @@ section {
       opacity: 0;
     }
 
+    @include responsive(T) {
+      &::before {
+        font-size: 64px;
+        opacity: 0.3;
+      }
+    }
+
     @include responsive(D) {
       &::before {
         font-size: 88px;
-        opacity: 0.3;
       }
     }
   }

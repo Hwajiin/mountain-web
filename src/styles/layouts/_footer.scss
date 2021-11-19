@@ -48,7 +48,8 @@
     margin-bottom: 0;
   }
 
-  @include responsive(D) {
+  @include responsive(T) {
+    margin-top: 0;
     &-left {
       padding-bottom: 0;
     }

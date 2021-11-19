@@ -1,6 +1,12 @@
 section {
+  $section-padding-size: 25px;
+
   @include flexbox();
   min-height: 100vh;
+
+  &:not(:last-child) {
+    padding-bottom: $section-padding-size * 3;
+  }
 
   .img-wrapper {
     @include flexbox();
@@ -19,11 +25,7 @@ section {
     margin: 25px 0;
   }
 
-  @include responsive(D) {
-    &:not(:first-child) {
-      padding: 50px $gutter + $lg-unit;
-    }
-
+  @include responsive(T) {
     &:nth-child(odd) {
       .row {
         display: flex;
@@ -42,6 +44,18 @@ section {
           height: 100%;
         }
       }
+    }
+  }
+
+  @include responsive(T) {
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
+
+  @include responsive(D) {
+    &:not(:first-child) {
+      padding: 50px $gutter + $lg-unit;
     }
   }
 }

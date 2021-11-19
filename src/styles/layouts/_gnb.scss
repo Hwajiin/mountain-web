@@ -32,7 +32,7 @@
     }
   }
 
-  @include responsive(D) {
+  @include responsive(T) {
     &-nav {
       @include flexbox();
     }
