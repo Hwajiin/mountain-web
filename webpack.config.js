@@ -1,11 +1,14 @@
 const path = require("path");
+
 const { BannerPlugin } = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
+const mode = process.env.NODE_ENV || "development";
+
 module.exports = {
-  mode: "development",
+  mode,
   entry: {
     main: "./src/main.js",
   },
@@ -35,7 +38,7 @@ module.exports = {
         loader: "url-loader",
         options: {
           limit: 4000,
-          name: "images/[name].[ext]",
+          name: "[name].[ext]",
         },
       },
     ],
@@ -47,6 +50,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       hash: true,
+      favicon: "favicon/favicon.ico",
     }),
     new CleanWebpackPlugin(),
     ...(process.env.NODE_ENV === "production"
