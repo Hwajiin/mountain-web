@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MNTN | Home</title>
+    <title>MNTN - A hiking guide</title>
+
+    <!-- SEO: WEB -->
+    <meta name="description" content="All about the hiking guide, be prepared for the moutains and beyond." />
+    <meta name="keywords" content="hiking, mountain, hiker, hiking guide" />
+
+    <!-- SEO: SNS -->
+    <meta property="og:title" content="MNTN - A hiking guide" />
+    <meta property="og:description" content="All about the hiking guide, be prepared for the moutains and beyond." />
+    <meta property="og:image" content="./main-thumbnail.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<%=htmlWebpackPlugin.files.favicon%>" type="image/x-icon">
+
     <!-- Googl Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Rubik:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -20,6 +36,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <header class="gnb">
       <div class="container">
@@ -27,7 +44,7 @@
           <div class="col-sm-4">
             <div class="gnb-wrapper">
               <div class="gnb-left">
-                <h1 class="logo">
+                <h1 class="logo" aria-label="logo">
                   <a href="/">MNTN</a>
                 </h1>
               </div>
@@ -35,7 +52,7 @@
                 <button
                   class="gnb-menu-icon sm-only"
                   type="button"
-                  aria-lable="menu button"
+                  aria-lable="dropdown menu"
                 >
                   <i class="fas fa-bars"></i>
                 </button>
@@ -50,7 +67,7 @@
                   <button
                     class="user-account-button"
                     type="button"
-                    aria-lable="user account button"
+                    aria-lable="user account"
                   >
                     <i class="far fa-user-circle"></i>
                     Account
@@ -79,7 +96,7 @@
               <button
                 class="user-account-button"
                 type="button"
-                aria-lable="user account button"
+                aria-lable="user account"
               >
                 <i class="far fa-user-circle"></i>
                 Account
@@ -93,7 +110,7 @@
     <main>
       <section id="start" data-id="start">
         <div class="start-background">
-          <img class="mountain-background" src="./images/mountain-bg-02.jpg" alt="mountain" />
+          <img class="mountain-background" src="./mountain-bg-02.jpg" alt="mountain" />
         </div>
         <div class="container">
           <div class="row">
@@ -152,7 +169,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="../images/mountain-01.jpg" alt="photo of mountain" />
+                <img src="./mountain-01.jpg" alt="photo of mountain" />
               </div>
             </div>
 
@@ -184,7 +201,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="../images/mountain-02.jpg" alt="photo of mountain" />
+                <img src="./mountain-02.jpg" alt="photo of mountain" />
               </div>
             </div>
             <div class="col-sm-4 col-md-6 col-lg-6">
@@ -215,7 +232,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="../images/mountain-03.jpg" alt="photo of mountain" />
+                <img src="./mountain-03.jpg" alt="photo of mountain" />
               </div>
             </div>
             <div class="col-sm-4 col-md-6 col-lg-6">
