@@ -9,7 +9,12 @@ const scrollIntoSection = (btn) => {
     `section[data-id="${btn.dataset.id}"]`
   );
 
-  targetSection && targetSection.scrollIntoView({ behavior: "smooth" });
+  // scrollIntoView Options: not supported by Safari
+  if (navigator.userAgent === "Safari") {
+    targetSection && targetSection.scrollIntoView();
+  } else {
+    targetSection && targetSection.scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 scrollBtns.forEach((btn) =>
