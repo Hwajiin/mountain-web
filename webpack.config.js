@@ -15,6 +15,9 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve("./dist"),
+    clean: {
+      keep: /\.git/,
+    },
   },
   module: {
     rules: [
@@ -64,5 +67,5 @@ module.exports = {
       publicPath: "/",
     },
   },
-  devtool: "source-map",
+  // devtool: "source-map",
 };
