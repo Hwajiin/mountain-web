@@ -28,13 +28,10 @@
     padding-bottom: $footer-margin-size;
   }
 
-  .more-blog-list,
-  .more-mntn-list {
-    h2 {
-      @include text-style(16);
-      color: $point-color;
-      margin-bottom: $footer-margin-size;
-    }
+  h2 {
+    @include text-style(16);
+    color: $point-color;
+    margin-bottom: $footer-margin-size;
   }
 
   .more-blog-item,
