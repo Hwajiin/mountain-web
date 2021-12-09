@@ -14,8 +14,8 @@
     <meta property="og:title" content="MNTN - A hiking guide" />
     <meta property="og:description" content="All about the hiking guide, be prepared for the moutains and beyond." />
     <meta property="og:image" content="./main-thumbnail.jpg" />
-    <meta property="og:url" content="" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="https://mountain-web-ec9dd.web.app" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<%=htmlWebpackPlugin.files.favicon%>" type="image/x-icon">
@@ -44,7 +44,7 @@
           <div class="col-sm-4">
             <div class="gnb-wrapper">
               <div class="gnb-left">
-                <h1 class="logo" aria-label="logo">
+                <h1 class="logo">
                   <a href="/">MNTN</a>
                 </h1>
               </div>
@@ -52,9 +52,9 @@
                 <button
                   class="gnb-menu-icon sm-only"
                   type="button"
-                  aria-lable="dropdown menu"
+                  aria-label="Open the dropdown menu"
                 >
-                  <i class="fas fa-bars"></i>
+                  <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
 
                 <nav class="gnb-nav sm-hidden">
@@ -67,9 +67,8 @@
                   <button
                     class="user-account-button"
                     type="button"
-                    aria-lable="user account"
                   >
-                    <i class="far fa-user-circle"></i>
+                    <i class="far fa-user-circle" aria-hidden="true"></i>
                     Account
                   </button>
                 </nav>
@@ -96,9 +95,8 @@
               <button
                 class="user-account-button"
                 type="button"
-                aria-lable="user account"
               >
-                <i class="far fa-user-circle"></i>
+                <i class="far fa-user-circle" aria-hidden></i>
                 Account
               </button>
             </nav>
@@ -110,7 +108,15 @@
     <main>
       <section id="start" data-id="start">
         <div class="start-background">
-          <img class="mountain-background" src="./mountain-bg-02.jpg" alt="mountain" />
+          <img
+            class="mountain-background"
+              srcset="
+              mountain-bg-02_raqz8i_c_scale,w_792.jpg 792w,
+              mountain-bg-02_raqz8i_c_scale,w_987.jpg 987w,
+              mountain-bg-02_raqz8i_c_scale,w_1400.jpg 1400w,
+              "
+              src="mountain-bg-02.jpg"
+              alt="mountain">
         </div>
         <div class="container">
           <div class="row">
@@ -130,21 +136,22 @@
                 </div>
         
                 <div class="aside-bar-right">
-                  <button type="button" data-id="start" aria-label="Go to start section">
+                  <button type="button" aria-labelledby="start" data-id="start">
                     Start
                   </button>
-                  <button type="button" data-id="01" aria-label="Go to first section">
+                  <button type="button" aria-labelledby="first" data-id="01">
                     01
                   </button>
-                  <button type="button" data-id="02" aria-label="Go to second section">
+                  <button type="button" aria-labelledby="second" data-id="02">
                     02
                   </button>
-                  <button type="button" data-id="03" aria-label="Go to third section">
+                  <button type="button" aria-labelledby="third" data-id="03">
                     03
                   </button>
                 </div>
         
               </aside>
+
               <div class="content-box">
                 <div class="title-wrapper">
                   <div class="title-line"></div>
@@ -169,7 +176,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="./mountain-01.jpg" alt="photo of mountain" />
+                <img src="mountain-01.jpg" alt="photo of mountain" />
               </div>
             </div>
 
@@ -201,7 +208,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="./mountain-02.jpg" alt="photo of mountain" />
+                <img src="mountain-02.jpg" alt="photo of mountain" />
               </div>
             </div>
             <div class="col-sm-4 col-md-6 col-lg-6">
@@ -232,7 +239,7 @@
           <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="img-wrapper">
-                <img src="./mountain-03.jpg" alt="photo of mountain" />
+                <img src="mountain-03.jpg" alt="photo of mountain" />
               </div>
             </div>
             <div class="col-sm-4 col-md-6 col-lg-6">
@@ -278,8 +285,8 @@
             </div>
           </div>
           <div class="col-sm-2 col-md-3 col-lg-3">
+            <h2>More on The Blog</h2>
             <ul class="more-blog-list">
-              <h2>More on The Blog</h2>
               <li class="more-blog-item"><a href="#">About MNTN</a></li>
               <li class="more-blog-item"><a href="#">Contributors &amp; Writers</a></li>
               <li class="more-blog-item"><a href="#">Write For Us</a></li>
@@ -288,8 +295,8 @@
             </ul>
           </div>
           <div class="col-sm-2 col-md-3 col-lg-3">
+            <h2>More on MNTN</h2>
             <ul class="more-mntn-list">
-              <h2>More on MNTN</h2>
               <li class="more-mntn-item"><a href="#">The Team</a></li>
               <li class="more-mntn-item"><a href="#">Jobs</a></li>
               <li class="more-mntn-item"><a href="#">Press</a></li>
