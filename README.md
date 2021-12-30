@@ -1,7 +1,7 @@
 # MNTN Landing Page
 
 <p align="center">
-    <img src="./src/assets/images/mntn-thumbnail.png" alt="MNTN landing page thumbnail" width="300">
+    <img src="./src/assets/images/mntn-thumbnail.png" alt="MNTN landing page thumbnail" width="500">
 </P>
 
 검색 엔진 최적화와 사용자 접근성을 고려하여 제작된 랜딩페이지입니다.
