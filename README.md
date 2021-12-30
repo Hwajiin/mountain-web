@@ -1,6 +1,8 @@
 # MNTN Landing Page
 
-![MNTN landing page thumbnail] (https://github.com/Hwajiin/mountain-web/tree/main/src/assets/images/mntn-thumbnail.png?raw=true)
+<p align="center">
+    <img src="./src/assets/images/mntn-thumbnail.png" alt="MNTN landing page thumbnail" width="300">
+</P>
 
 검색 엔진 최적화와 사용자 접근성을 고려하여 제작된 랜딩페이지입니다.
 
